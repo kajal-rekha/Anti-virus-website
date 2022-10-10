@@ -12,7 +12,7 @@
   --gradient-secondary: linear-gradient(to top left, #d35e2c, #ff7a42);
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -23,7 +23,7 @@
 ::-webkit-scrollbar-thumb {
   background-color: #24cbc8;
   height: 10%;
-} */
+}
 
 * {
   margin: 0;
