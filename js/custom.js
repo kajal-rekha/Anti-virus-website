@@ -215,7 +215,7 @@ function previousSlide() {
   activateDots(currentSlide);
 }
 
-function nextslide() {
+function nextSlide() {
   if (currentSlide === maxSlide) currentSlide = 0;
   else currentSlide++;
   updateSlide(currentSlide);
@@ -236,7 +236,7 @@ dotContainer.addEventListener("click", function (e) {
 // button handles
 ///////////////////////////////////////////
 btnLeft.addEventListener("click", previousSlide);
-btnRight.addEventListener("click", nextslide);
+btnRight.addEventListener("click", nextSlide);
 
 //////////////////////////////////////////
 // keyboard
