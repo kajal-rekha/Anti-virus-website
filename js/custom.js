@@ -255,12 +255,17 @@ tabsContainer.addEventListener("click", function (e) {
 
   if (!btn) return;
 
+  // Remove active classes
+
   tabs.forEach((tab) => tab.classList.remove("operations-tab-active"));
   tabsContent.forEach((content) =>
     content.classList.remove("operations-content-active")
   );
 
+  // Activate tab
+
   btn.classList.add("operations-tab-active");
+
   document
     .querySelector(`.operations-content-${btn.dataset.tab}`)
     .classList.add("operations-content-active");
