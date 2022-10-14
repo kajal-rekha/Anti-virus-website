@@ -85,7 +85,6 @@ function openModal(e) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 }
-btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
 function closeModal() {
   modal.classList.add("hidden");
@@ -93,6 +92,8 @@ function closeModal() {
 }
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
@@ -265,7 +266,6 @@ tabsContainer.addEventListener("click", function (e) {
   // Activate tab
 
   btn.classList.add("operations-tab-active");
-
   document
     .querySelector(`.operations-content-${btn.dataset.tab}`)
     .classList.add("operations-content-active");
