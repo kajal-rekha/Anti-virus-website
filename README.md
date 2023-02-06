@@ -1,4 +1,4 @@
-# Tera Guard
+# Antivirus
 
 An antivirus website that provides a secure environment for users to protect their systems from malicious attacks and viruses.
 
